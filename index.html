@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arctic Travels</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <div class="logo">Arctic Travels</div>
+      <ul class="nav-links">
+        <li><a href="#regions">Regions</a></li>
+        <li><a href="#lodging">Lodging</a></li>
+        <li><a href="#resorts">Resorts</a></li>
+        <li><a href="#passes">Passes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="login-btn">Log In</button>
+    </nav>
+    <div class="hero">
+      <h1>Plan the Perfect Winter Trip</h1>
+      <p>Easily plan your ideal ski trip from home with the help of professionals.</p>
+      <button class="cta-btn" id="openBookingForm">Book Here</button>
+    </div>
+  </header>
+
+  <!-- Options Section -->
+  <section class="options" id="regions">
+    <div class="option">
+      <h2>Regions</h2>
+      <button class="cta-btn">Book Here</button>
+    </div>
+    <div class="option" id="lodging">
+      <h2>Lodging</h2>
+      <button class="cta-btn">Book Here</button>
+    </div>
+    <div class="option" id="resorts">
+      <h2>Resorts</h2>
+      <button class="cta-btn">Book Here</button>
+    </div>
+    <div class="option" id="passes">
+      <h2>Passes</h2>
+      <button class="cta-btn">Book Here</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-content">
+      <p>&copy; 2024 Arctic Travels. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Form Modal -->
+  <div class="modal" id="bookingModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2>Book Your Winter Trip</h2>
+      <form id="bookingForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination">
+          <option value="alps">The Alps</option>
+          <option value="rockies">The Rockies</option>
+          <option value="scandinavia">Scandinavia</option>
+        </select>
+        <label for="date">Travel Date:</label>
+        <input type="date" id="date" name="date" required>
+        <button type="submit" class="cta-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
